@@ -1,0 +1,19 @@
+START
+
+INPUT last_composed_time
+INPUT releases_a_lot
+INPUT composed_recently
+
+IF last_composed_time > 5 THEN
+    OUTPUT "You need to start writing"
+END IF
+
+IF releases_a_lot = "Yes" THEN
+    OUTPUT "You need to promote your songs"
+END IF
+
+IF composed_recently = "Yes" THEN
+    OUTPUT "You need to record and release your songs!"
+END IF
+
+END
