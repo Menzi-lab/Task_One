@@ -1,19 +1,10 @@
-START
+when last did you compose a song > 5
+do you release a lot | No
+did you compose a song recently | yes
 
-INPUT last_composed_time
-INPUT releases_a_lot
-INPUT composed_recently
-
-IF last_composed_time > 5 THEN
-    OUTPUT "You need to start writing"
-END IF
-
-IF releases_a_lot = "Yes" THEN
-    OUTPUT "You need to promote your songs"
-END IF
-
-IF composed_recently = "Yes" THEN
-    OUTPUT "You need to record and release your songs!"
-END IF
-
-END
+if the user hasn't composed a song 
+	tell the user "You need to start writing"
+if the user releases a lot 
+	tell the user "You need to promote your songs"
+if the user has composed a song recently
+	tell the user "You need to record and release your songs!"
